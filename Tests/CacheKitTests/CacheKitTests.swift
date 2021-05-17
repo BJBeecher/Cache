@@ -1,11 +1,4 @@
-    import XCTest
-    @testable import CacheKit
+import XCTest
+@testable import CacheKit
 
-    final class CacheKitTests: XCTestCase {
-        func testExample() {
-            // This is an example of a functional test case.
-            // Use XCTAssert and related functions to verify your tests produce the correct
-            // results.
-            XCTAssertEqual(CacheKit().text, "Hello, World!")
-        }
-    }
+final class CacheKitTests: XCTestCase {}
