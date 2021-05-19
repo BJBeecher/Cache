@@ -1,7 +1,7 @@
 import XCTest
-@testable import CacheKit
+@testable import Cache
 
-final class CacheKitTests: XCTestCase {
+final class CacheTests: XCTestCase {
     
     var store = [WrappedKey<UUID> : Entry<String>]()
     
