@@ -7,10 +7,14 @@
 
 import Foundation
 
-final class Entry<Value> {
-    let value: Value
+final class Entry<Key, Value> {
+    let key : Key
+    let value : Value
 
-    init(value: Value) {
+    init(key: Key, value: Value) {
+        self.key = key
         self.value = value
     }
 }
+
+extension Entry : Codable where Key : Codable, Value : Codable {}

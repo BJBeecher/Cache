@@ -3,7 +3,7 @@ import XCTest
 
 final class CacheTests: XCTestCase {
     
-    var store = [WrappedKey<UUID> : Entry<String>]()
+    var store = [WrappedKey<UUID> : Entry<UUID, String>]()
     
     lazy var cache = Cache<UUID, String> { entry, wrappedKey in
         self.store[wrappedKey] = entry
